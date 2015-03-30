@@ -4,8 +4,7 @@ MAINTAINER jmfiz <jmfiz@paradigmatecnologico.com>
 # Install Docker
 RUN \
 	apt-get update && \
-	apt-get install -q -y wget && \
-	apt-get install -q -y git && \
+	apt-get install -q -y wget git curl && \
     wget -qO- https://get.docker.com/ | sh
 
 # Install kubernetes
