@@ -14,17 +14,23 @@ It contains the following components:
 ##Quickstart
 
 Build the image:
+
 ```
 docker build -t k8s-ubuntu-singlenode .
 ```
+
 then run:
+
 ```
 docker run --privileged -t -i --net="host" k8s-ubuntu-singlenode
 ```
+
 Or run the image without building:
+
 ```
 docker run --privileged -t -i --net="host" jmfiz/k8s-ubuntu-singlenode
 ```
+
 All necesary kubernetes services are started, so you can then use kubernetes locally.
 
 ##Warning About Disk Usage
